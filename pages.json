@@ -1,0 +1,100 @@
+{
+	"easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/books",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		}
+		,{
+		    "path" : "pages/classify/classify",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "分类",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		}
+		,{
+		    "path" : "pages/cart/cart",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "购物车",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		}
+		,{
+		    "path" : "pages/mine/mine",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "我的",
+		        "enablePullDownRefresh": false
+		    }
+		}
+        ,{
+            "path" : "pages/login/login",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "登录",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/index/booksDetail",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "图书详情",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+	    "color": "#cdcdcd",
+	    "selectedColor": "#d81e06",
+	    "borderStyle": "black",
+	    "backgroundColor": "#ffffff",
+	    "list": [{
+	        "pagePath": "pages/index/books",
+	        "iconPath": "static/tabBarIcon/home.png",
+	        "selectedIconPath": "static/tabBarIcon/homeSelected.png",
+	        "text": "首页"
+	    }, {
+	        "pagePath": "pages/classify/classify",
+	        "iconPath": "static/tabBarIcon/classify.png",
+	        "selectedIconPath": "static/tabBarIcon/classifySelected.png",
+	        "text": "分类"
+	    }, {
+	        "pagePath": "pages/cart/cart",
+	        "iconPath": "static/tabBarIcon/cart.png",
+	        "selectedIconPath": "static/tabBarIcon/cartSelected.png",
+	        "text": "购物车"
+	    }, {
+	        "pagePath": "pages/mine/mine",
+	        "iconPath": "static/tabBarIcon/mine.png",
+	        "selectedIconPath": "static/tabBarIcon/mineSelected.png",
+	        "text": "我的"
+	    }]
+	},
+	"condition" : { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [
+			{
+				"name": "", //模式名称
+				"path": "", //启动页面，必选
+				"query": "" //启动参数，在页面的onLoad函数里面得到
+			}
+		]
+	}
+}

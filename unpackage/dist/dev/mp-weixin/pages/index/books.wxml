@@ -1,0 +1,1 @@
+<view><u-swiper vue-id="4ae0ccc2-1" list="{{goodsImgList}}" height="240rpx" bind:__l="__l"></u-swiper><view><u-tabs vue-id="4ae0ccc2-2" list="{{tabList}}" itemStyle="height: 34px" data-event-opts="{{[['^click',[['clickTab']]]]}}" bind:click="__e" bind:__l="__l"></u-tabs></view><card vue-id="4ae0ccc2-3" goodsList="{{goodsList}}" bind:__l="__l"></card></view>
